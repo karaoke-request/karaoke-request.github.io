@@ -2,6 +2,7 @@ table.request_table tr th {
 	width: 15%;
     background: #E6EAFF;
 }
+
 table.request_table {
     width: 100%;
     margin:20px 0 50px;
@@ -9,9 +10,18 @@ table.request_table {
     border-left: 1px solid #CCC;
     border-spacing:0;
 }
+
 table.request_table tr th,table.request_table tr td {　/*「,（カンマ）」で区切って複数のセレクタを指定しています*/
     font-size: 12px;
     border-bottom: 1px solid #CCC;
     border-right: 1px solid #CCC;
     padding: 7px;
+}
+
+header-title {
+	margin: 0;
+	color: #fff;
+	font-size: 42px;
+	font-weight: 700;
+	text-shadow: #111 0px 0px 10px;
 }
