@@ -1,9 +1,45 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 body {
+	box-sizing: border-box;
 	background: #fff;
 	color: #444;
 	font-size: 16px;
 	font-family: 'ÉÅÉCÉäÉI', Meiryo, 'ÉqÉâÉMÉmäpÉS Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, 'ÇlÇr ÇoÉSÉVÉbÉN', sans-serif;
-	line-height: 1.42857;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
 }
 
 a:link {
@@ -27,14 +63,27 @@ a:visited {
 	width: 100%;
 }
 
-#header_background {
+.inner {
+	position: relative;
+	max-width: 640px;
+	padding: 20px 10px;
+	margin: 0 auto;
+}
+
+#header_wrap {
 
 	background: #ea5866;
-	background-image: linear-gradient(135deg, #8cc152, #da4453, #f6bb42);
-	color: #fff;
+	background: -moz-linear-gradient(135deg, #8cc152, #da4453, #f6bb42);
+	background: -webkit-linear-gradient(135deg, #8cc152, #da4453, #f6bb42);
+	background: -ms-linear-gradient(135deg, #8cc152, #da4453, #f6bb42);
+	background: -o-linear-gradient(135deg, #8cc152, #da4453, #f6bb42);
+	background: linear-gradient(135deg, #8cc152, #da4453, #f6bb42);
 	text-align: center;
-	font-weight: bold;
 
+}
+
+#header_wrap .inner {
+	padding: 50px 10px 30px 10px;
 }
 
 #project-title {
@@ -53,11 +102,42 @@ a:visited {
 	text-shadow: #111 0px 0px 10px;
 }
 
+#outlink {
+	position: absolute;
+	width: 210px;
+	z-index: 10;
+	bottom: -40px;
+	right: 0;
+	height: 70px;
+}
+
+.twitter_link {
+	display: block;
+	float: right;
+	width: 90px;
+	height:80px;
+	text-indent: -5000px;
+	overflow: hidden;
+	background: url("../icon/logo_safteyspace.png") no-repeat bottom left;
+}
+
+.youtube_link {
+	display: block;
+	float: left;
+	width: 90px;
+	height:80px;
+	text-indent: -5000px;
+	overflow: hidden;
+	background: url("../icon/youtube_social_icon_red.png") no-repeat bottom right;
+	margin-left: 10px;
+}
+
 /* ÉRÉìÉeÉìÉc */
 
 .content {
+	background: fff;
 	padding: 48px 0 24px;
-	*zoom: 1;
+	
 }
 
 .article {
@@ -67,7 +147,7 @@ a:visited {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	*zoom: 1;
+	
 }
 
 .content:after,
@@ -92,7 +172,7 @@ a:visited {
 .article-paragraph {
 	margin: 0 0 24px;
 	line-height: 1.7;
-	*zoom: 1;
+	
 }
 
 /* ÉtÉbÉ^Å[ */
@@ -117,7 +197,7 @@ a:visited {
 	display: inline-block;
 	vertical-align: middle;
 	*vertical-align: auto;
-	zoom: 1;
+	
 	*display: inline;
 }
 
@@ -129,7 +209,7 @@ a:visited {
 	display: inline-block;
 	vertical-align: middle;
 	*vertical-align: auto;
-	zoom: 1;
+	
 	*display: inline;
 }
 
@@ -179,7 +259,7 @@ a:visited {
 	display: inline-block;
 	vertical-align: middle;
 	*vertical-align: auto;
-	zoom: 1;
+	
 	*display: inline;
 }
 
