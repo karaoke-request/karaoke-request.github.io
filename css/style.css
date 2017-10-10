@@ -1,0 +1,272 @@
+body {
+	background: #fff;
+	color: #444;
+	font-size: 16px;
+	font-family: 'ÉÅÉCÉäÉI', Meiryo, 'ÉqÉâÉMÉmäpÉS Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, 'ÇlÇr ÇoÉSÉVÉbÉN', sans-serif;
+	line-height: 1.42857;
+}
+
+a:link {
+	color: #04c;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #f00;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #999;
+	text-decoration: none;
+}
+
+ /* ÉÅÉCÉìÉCÉÅÅ[ÉW */
+
+.outer {
+	width: 100%;
+}
+
+#header_background {
+
+	background: #ea5866;
+	background-image: linear-gradient(135deg, #8cc152, #da4453, #f6bb42);
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+#project-title {
+	margin: 0;
+	color: #fff;
+	font-size: 42px;
+	font-weight: 700;
+	text-shadow: #111 0px 0px 10px;
+}
+
+#project-line {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 300;
+	background: none;
+	text-shadow: #111 0px 0px 10px;
+}
+
+/* ÉRÉìÉeÉìÉc */
+
+.content {
+	padding: 48px 0 24px;
+	*zoom: 1;
+}
+
+.article {
+	margin: 0 auto 48px;
+	padding-bottom: 48px;
+	width: 960px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	*zoom: 1;
+}
+
+.content:after,
+.article:after,
+.article-paragraph:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.article-title {
+	padding-bottom: 6px;
+	border-bottom: #333 solid 1px;
+}
+
+.article-title,
+.article-paragraph-title {
+	clear: both;
+	margin: 0 0 24px;
+}
+
+.article-paragraph {
+	margin: 0 0 24px;
+	line-height: 1.7;
+	*zoom: 1;
+}
+
+/* ÉtÉbÉ^Å[ */
+
+.footer {
+	padding: 12px 0;
+	border-top: #ccd1d9 solid 1px;
+	background: #fff;
+	text-align: center;
+}
+
+.footer-nav {
+	margin-bottom: 12px;
+	width: 100%;
+	text-align: center;
+}
+
+.footer-nav-group {
+	margin: 0;
+	padding: 0;
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	zoom: 1;
+	*display: inline;
+}
+
+.footer-nav-group>li {
+	margin: 0;
+	padding: 0 6px;
+	font-size: 0.9em;
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	zoom: 1;
+	*display: inline;
+}
+
+.footer-nav-group>li a {
+	color: #666;
+	text-decoration: none;
+}
+
+.footer-nav-group>li a:hover {
+	color: #999;
+}
+
+.footer-text {
+	margin-bottom: 6px;
+	color: #999;
+	font-size: 0.8em;
+}
+
+.footer-copyright {
+	color: #999;
+	font-size: 0.8em;
+}
+
+/* ÉpÅ[Éc */
+
+.btn {
+	margin: 6px;
+	padding: 12px 24px;
+	border: #aab2bd solid 1px;
+	background: #aab2bd;
+	color: #fff;
+	vertical-align: baseline;
+	text-align: center;
+	white-space: nowrap;
+	font-size: 1em;
+	line-height: 1;
+	cursor: pointer;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	zoom: 1;
+	*display: inline;
+}
+
+.btn_lg {
+	padding: 18px 36px;
+}
+
+.btn_sm {
+	padding: 6px 12px;
+	font-size: 0.8em;
+}
+
+a.btn:link,
+a.btn:active,
+a.btn:focus,
+a.btn:hover,
+a.btn:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+a.btn_default:link,
+a.btn_default:active,
+a.btn_default:focus,
+a.btn_default:hover,
+a.btn_default:visited {
+	color: #656d78;
+	text-decoration: none;
+}
+
+.btn_normal {
+	border: #aab2bd solid 1px;
+	background: #aab2bd;
+}
+
+.btn_default {
+	border: #ccd1d9 solid 1px;
+	background: #f5f7fa;
+}
+
+.btn_primary {
+	border: #4a89dc solid 1px;
+	background: #4a89dc;
+}
+
+.btn_success {
+	border: #8cc152 solid 1px;
+	background: #8cc152;
+}
+
+.btn_warning {
+	border: #f6bb42 solid 1px;
+	background: #f6bb42;
+}
+
+.btn_danger {
+	border: #da4453 solid 1px;
+	background: #da4453;
+}
+
+.btn_normal:hover {
+	border: #ccd1d9 solid 1px;
+	background: #ccd1d9;
+}
+
+.btn_default:hover {
+	border: #aab2bd solid 1px;
+	background: #e6e9ed;
+}
+
+.btn_primary:hover {
+	border: #5d9cec solid 1px;
+	background: #5d9cec;
+}
+
+.btn_success:hover {
+	border: #a0d468 solid 1px;
+	background: #a0d468;
+}
+
+.btn_warning:hover {
+	border: #ffce54 solid 1px;
+	background: #ffce54;
+}
+
+.btn_danger:hover {
+	border: #ed5565 solid 1px;
+	background: #ed5565;
+}
+
