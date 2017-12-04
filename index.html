@@ -1,57 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="icon" type="image/png" href="assets/icon/icon.png">
+	<link rel="stylesheet" href="assets/css/style.css">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="icon" type="image/png" href="icon/icon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font-awesome.min">
-    <title>KaraokeRequestConfirm</title>
-</head>
+    <title>KaraokeSpace</title>
 
-<body>
-    <div id="header_wrap" class="outer">
-    	<header class="inner">
-    		<h1 id="project-title">KaraokeRequestConfirm</h1>
-    		<h2 id="project-line">TwitterやYouTubeでリクエストされた曲を確認するところ</h2><br>
-    		
-			<section id="outlink">
-				<a class="twitter_link" href="https://twitter.com/Raildex1">Twitter</a>
-				<a class="youtube_link" href="https://www.youtube.com/c/RaildexsTouhouKARAOKECh">YouTube</a>
-			</section>
-            
-    	</header>
-    </div>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-    <div class="content">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-        <div class="article">
-            <h3 class="article-paragraph-title">Request List for YouTube</h3>
-            <p class="article-paragraph">
-                <a href="request_list_for_youtube_1st.html" class="btn btn_lg btn_primary">1st<br>END</a>　<a href="request_list_for_youtube_2nd.html" class="btn btn_lg btn_primary">2nd<br>END</a>
-            </p>
-            <br>
-            <h3 class="article-paragraph-title">Request List for Twitter</h3>
-            <p class="article-paragraph">
-                <a href="request_list_for_twitter.html" class="btn btn_lg btn_primary">CLICK<br>DISPLAY</a>
-            </p>
-        </div>
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/Chart.js"></script>
+	<script src="assets/js/modernizr.custom.js"></script>
+	
 
-    </div>
+	
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
-    <div class="footer">
-    
-        <div class="footer-nav">
-            <ul class="footer-nav-group">
-                <li><a href="https://twitter.com/Raildex1"><i class="fa fa-twitter"></i>&nbsp;Twitter</a></li>
-                <li><a href="https://www.youtube.com/c/RaildexsTouhouKARAOKECh"><i class="fa fa-youtube-play"></i>&nbsp;YouTube</a></li>
-            </ul>
-        </div>
-        
-        <div class="footer-copyright">Copyright &copy; 2017 Raildex's Touhou KARAOKE Ch. All Rights Reserved.</div>
-        
-    </div>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+		
+	<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a>MENU</a></h1>
+			<i class="icon-remove menu-close"></i>
+			<a class="smoothScroll">Home</a>
+			<a href="music.html" class="smoothScroll">Music</a>
+			<a href="request.html" class="smoothScroll">Request</a>
+			<a href="contact.html" class="smoothScroll">Contact</a>
+			<a href="https://twitter.com/Raildex1" target="_blank"><i class="icon-twitter"></i></a>
+		</div>
+		
+		<!-- Menu button -->
+		<div id="menuToggle"><i class="icon-reorder"></i></div>
+	</nav>
+
+
+	
+	<!-- ========== HEADER SECTION ========== -->
+	<section id="home" name="home"></section>
+	<div id="headerwrap">
+		<div class="container">
+			<br>
+			<h1>KaraokeSpace</h1>
+			<h2>リクエストされた曲や投稿されている曲を<br>確認するところ</h2>
+			<div class="row">
+				<br>
+				<br>
+				<br>
+				<div class="col-lg-6 col-lg-offset-3">
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+	
+	
+	<!-- ========== WHITE SECTION ========== -->
+	<div id="w">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h3>WELCOME TO <bold>KaraokeSpace<br>ここではRaildexが作成したカラオケ動画やTwitter・YouTubeでリクエストされた曲をリスト化したものを載せています。</bold></h3><br/>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /w -->
+	
+	<!-- ========== SERVICES - GREY SECTION ========== -->
+	<section id="services" name="services"></section>
+	<div id="g">
+		<div class="container">
+			<div class="row">
+				<h3>上位人気曲(YouTube)</h3>
+				<br>
+				<br>
+				<div class="col-lg-3">
+					<iframe width="260" height="146" src="https://www.youtube.com/embed/iFiYrzKv94o" frameborder="0" allowfullscreen></iframe>
+					<h4>チルノのパーフェクトさんすう教室 ⑨周年バージョン</h4>
+					<p>Circle:IOSYS<br>Vocal:miko, senya, 越田Rute隆人,<br>あき, ビートまりお, あにー<br>Original:おてんば恋娘(紅魔郷)</p>
+				</div>
+				<div class="col-lg-3">
+					<iframe width="260" height="146" src="https://www.youtube.com/embed/0oAII8UsCV8" frameborder="0" allowfullscreen></iframe>
+					<h4>PRESERVED VAMPIRE</h4><br>
+					<p>Circle:SOUND HOLIC<br>Vocal:Nana Takahashi<br>Original:月時計 ～ ルナ・ダイアル(花映塚), フラワリングナイト(花映塚)</p>
+				</div>
+				<div class="col-lg-3">
+					<iframe width="260" height="146" src="https://www.youtube.com/embed/eN1T85chQ4E" frameborder="0" allowfullscreen></iframe>
+					<h4>ココロコイシ-Eyes-</h4><br>
+					<p>Circle:暁Records<br>Vocal:めらみぽっぷ<br>Original:ハルトマンの妖怪少女, ラストリモート(地霊殿)</p>
+				</div>
+				<div class="col-lg-3">
+					<iframe width="260" height="146" src="https://www.youtube.com/embed/Nu0qMmzXEtE" frameborder="0" allowfullscreen></iframe>
+					<h4>幻想のサテライト</h4><br>
+					<p>Circle:豚乙女<br>Vocal:ランコ<br>Original:天空のグリニッジ(大空魔術)</p>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /g -->
+	
+	<!-- ========== CHARTS - DARK GREY SECTION ========== -->
+	<div id="dg">
+		<div class="container">
+			<div class="row">
+				<h3>上位人気曲(ニコニコ動画)</h3>
+				<br>
+				<br>
+				<div class="col-lg-3">
+					<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm25966023/script?w=260&h=146"></script><noscript><a href="http://www.nicovideo.jp/watch/sm25966023">【ニコカラHD】【艦これ挿入歌】進め!金剛型四姉妹(On vocal)[高画質]</a></noscript>
+					<h4>進め!金剛型四姉妹</h4><br>
+					<p>Anime:艦隊これくしょん<br>Artist:金剛型四姉妹</p>
+				</div>
+				<div class="col-lg-3">
+					<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm24281608/script?w=260&h=146"></script><noscript><a href="http://www.nicovideo.jp/watch/sm24281608">【ニコカラHD】IGNITE(JOYSOUND音源)[スライドver][高画質]</a></noscript>
+					<h4>IGNITE</h4><br>
+					<p>Anime:ソードアート・オンラインII<br>Artist:藍井エイル</p>
+				</div>
+				<div class="col-lg-3">
+					<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm27147586/script?w=260&h=146"></script><noscript><a href="http://www.nicovideo.jp/watch/sm27147586">【ニコカラHD】【がっこうぐらし】ふれんどしたい(JOYSOUND音源)[高画質]</a></noscript>
+					<h4>ふ・れ・ん・ど・し・た・い</h4><br>
+					<p>Anime:がっこうぐらし!<br>Artist:学園生活部</p>
+				</div>
+				<div class="col-lg-3">
+					<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm30605253/script?w=260&h=146"></script><noscript><a href="http://www.nicovideo.jp/watch/sm30605253">【ニコカラHD】【小林さんちのメイドラゴン】青空のラプソディ(DAM音源)</a></noscript>
+					<h4>青空のラプソディ</h4><br>
+					<p>Anime:小林さんちのメイドラゴン<br>Artist:fhána</p>
+				</div>
+			
+			</div>	
+		</div><!-- /container -->
+	</div><!-- /dg -->
+	
+	<!-- ========== FOOTER SECTION ========== -->
+	<section id="contact" name="contact"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row">
+					<h3><b>CONTACT US</b></h3>
+					<br>
+					<div class="col-lg-4">
+						<h3><b>Send Us A Message:</b></h3>
+						<h3>raildex_contactATyahoo.co.jp<br>ATを@に変更</h3>
+						<br>
+					</div>
+					
+					<div class="col-lg-4">	
+						<h3><b>Contact,</b></h3>
+						<h3>←　or　→</h3>
+						<br>
+					</div>
+					
+					<div class="col-lg-4">
+						<h3><b>My Social:</b></h3>
+						<p>
+							<a href="https://twitter.com/Raildex1" target="_blank"><i class="icon-twitter"></i></a>
+						</p>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /f -->
+	
+	
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/classie.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/main.js"></script>
 </body>
-
 </html>

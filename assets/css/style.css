@@ -5,8 +5,7 @@ del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+fieldset, form, label, legend, caption, tbody, tfoot, thead,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
@@ -27,17 +26,13 @@ ol, ul {
 	list-style: none;
 }
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 body {
 	box-sizing: border-box;
 	background: #fff;
 	color: #444;
 	font-size: 16px;
-	font-family: 'ƒƒCƒŠƒI', Meiryo, 'ƒqƒ‰ƒMƒmŠpƒS Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, '‚l‚r ‚oƒSƒVƒbƒN', sans-serif;
+	font-family: 'ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½I', Meiryo, 'ï¿½qï¿½ï¿½ï¿½Mï¿½mï¿½pï¿½S Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, 'ï¿½lï¿½r ï¿½oï¿½Sï¿½Vï¿½bï¿½N', sans-serif;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 }
@@ -57,7 +52,7 @@ a:visited {
 	text-decoration: none;
 }
 
- /* ƒƒCƒ“ƒCƒ[ƒW */
+ /* ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½[ï¿½W */
 
 .outer {
 	width: 100%;
@@ -132,7 +127,7 @@ a:visited {
 	margin-left: 10px;
 }
 
-/* ƒRƒ“ƒeƒ“ƒc */
+/* ï¿½Rï¿½ï¿½ï¿½eï¿½ï¿½ï¿½c */
 
 .content {
 	background: fff;
@@ -175,7 +170,7 @@ a:visited {
 	
 }
 
-/* ƒtƒbƒ^[ */
+/* ï¿½tï¿½bï¿½^ï¿½[ */
 
 .footer {
 	padding: 12px 0;
@@ -233,7 +228,7 @@ a:visited {
 	font-size: 0.8em;
 }
 
-/* ƒp[ƒc */
+/* ï¿½pï¿½[ï¿½c */
 
 .btn {
 	margin: 6px;
@@ -305,6 +300,11 @@ a.btn_default:visited {
 	background: #4a89dc;
 }
 
+.btn_secondary {
+	border: #3eb34b solid 1px;
+	background: #3eb34b;
+}
+
 .btn_success {
 	border: #8cc152 solid 1px;
 	background: #8cc152;
@@ -335,6 +335,11 @@ a.btn_default:visited {
 	background: #5d9cec;
 }
 
+.btn_secondary:hover {
+	border: #52ca76 solid 1px;
+	background: #52ca76;
+}
+
 .btn_success:hover {
 	border: #a0d468 solid 1px;
 	background: #a0d468;
@@ -350,3 +355,10 @@ a.btn_default:visited {
 	background: #ed5565;
 }
 
+#toggle2, #toggle4, #toggle6, #toggle8, #toggle10, #toggle12, #toggle14 {
+	display: none;
+}
+
+.menu-wrap a {
+	cursor:pointer;
+}
